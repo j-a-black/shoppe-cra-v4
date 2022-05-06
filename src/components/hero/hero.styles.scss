@@ -1,0 +1,39 @@
+@import "../../sassStyles/variables";
+
+.hero-container {
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(
+      to right,
+      rgb(white, 0.7),
+      rgba($color-main-style-71, 0.15)
+    ),
+    url("../../assets/images/hero-image.webp");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+
+  .hero-text-box {
+    max-width: 60rem;
+    text-align: center;
+
+    .header-primary {
+      display: block;
+      font-family: $kaushan-script;
+      font-size: 4.5rem;
+      color: $desire;
+    }
+
+    .header-sub {
+      display: block;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.grid-center-item {
+  display: grid;
+  place-items: center;
+}
