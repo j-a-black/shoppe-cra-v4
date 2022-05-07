@@ -19,5 +19,11 @@ body {
 }
 
 section {
-  padding: 1rem;
+  padding: 3rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  h2 {
+    text-transform: uppercase;
+  }
 }
