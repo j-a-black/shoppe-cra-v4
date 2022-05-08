@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   font-family: $lato;
+  color: $color-main-style;
 }
 
 section {
@@ -29,6 +30,7 @@ section {
     line-height: 1.7;
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    color: $color-secondary-style;
   }
 
   p {

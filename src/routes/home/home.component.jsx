@@ -4,7 +4,7 @@ import Content from "../../components/content/content.component";
 import Grid from "../../components/grid/grid.component";
 import CardList from "../../components/card-list/card-list.component";
 
-import { about, servicesData } from "../../data";
+import { about, servicesData, galleryData } from "../../data";
 
 const Home = () => {
   return (
@@ -16,6 +16,11 @@ const Home = () => {
       <SectionBlock title="Treat Yourself to Our Selection" tagId="selection">
         <Grid>
           <CardList data={servicesData} />
+        </Grid>
+      </SectionBlock>
+      <SectionBlock title="Popular Items" tagId="gallery">
+        <Grid>
+          <CardList data={galleryData} />
         </Grid>
       </SectionBlock>
     </div>

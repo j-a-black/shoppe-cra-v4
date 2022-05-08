@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card-img {
+    height: 15rem;
+
+    &.img-lg {
+      height: 21rem;
+    }
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: fit;
+    }
+  }
+
+  h3 {
+    margin: 1.5rem 0;
+  }
+
+  p {
+    text-align: center;
+  }
+}
