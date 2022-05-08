@@ -5,11 +5,13 @@ import { about } from "../../data.js";
 
 import "./section-block.styles.scss";
 
-const SectionBlock = () => {
+const SectionBlock = ({ title, tagId, children }) => {
   return (
-    <section className="section-flex" id="about">
+    <section className="section-flex" id={tagId}>
       <HeaderLine />
-      <Content data={about} />
+      {title && <h2>{title}</h2>}
+      {/* <Content data={about} /> */}
+      {children}
     </section>
   );
 };
