@@ -11,7 +11,7 @@ export const about = {
   src: AboutSvg,
 };
 
-export const treatYourselfData = [
+export const servicesData = [
   {
     id: 1,
     imgSrc: CoffeeBeans,

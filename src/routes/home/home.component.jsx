@@ -2,8 +2,9 @@ import Hero from "../../components/hero/hero.component";
 import SectionBlock from "../../components/section-block/section-block.component";
 import Content from "../../components/content/content.component";
 import Grid from "../../components/grid/grid.component";
+import CardList from "../../components/card-list/card-list.component";
 
-import { about } from "../../data";
+import { about, servicesData } from "../../data";
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
         <Content data={about} />
       </SectionBlock>
       <SectionBlock title="Treat Yourself to Our Selection" tagId="selection">
-        <Grid />
+        <Grid>
+          <CardList data={servicesData} />
+        </Grid>
       </SectionBlock>
     </div>
   );

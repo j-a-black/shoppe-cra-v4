@@ -5,7 +5,7 @@ import CoffeeCup from "../../assets/images/coffee-cup.png";
 import Cake from "../../assets/images/cake.png";
 import Takeout from "../../assets/images/takeout.png";
 
-const Grid = () => {
+const Grid = ({ children }) => {
   return (
     <div className="grid-container">
       <div className="card">
