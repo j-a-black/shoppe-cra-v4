@@ -1,0 +1,14 @@
+.line-divider {
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
+
+  img {
+    // border: 1px solid red;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 3rem;
+  }
+}

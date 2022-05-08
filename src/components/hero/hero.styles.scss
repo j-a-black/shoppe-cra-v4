@@ -2,7 +2,7 @@
 
 .hero-container {
   width: 100%;
-  height: 75vh;
+  height: 60vh;
   background-image: linear-gradient(
       to right,
       rgb(white, 0.7),
@@ -22,7 +22,7 @@
       display: block;
       font-family: $kaushan-script;
       font-size: 4.5rem;
-      color: $desire;
+      color: $color-secondary-style;
     }
 
     .header-sub {

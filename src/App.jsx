@@ -16,3 +16,11 @@ const App = () => {
 };
 
 export default App;
+
+/*
+Attributes
+
+<a href='https://pngtree.com/so/straight'>straight png from pngtree.com/</a>
+<a href="https://storyset.com/worker">Worker illustrations by Storyset</a>
+
+*/
