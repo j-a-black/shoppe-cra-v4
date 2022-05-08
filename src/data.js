@@ -16,7 +16,7 @@ export const servicesData = [
     id: 1,
     imgSrc: CoffeeBeans,
     subHeader: "Coffee Beans",
-    para: "Our coffee is imported directly from the farmers and roasted in-house",
+    para: "Imported directly from the farmers and roasted in-house",
   },
   {
     id: 2,
