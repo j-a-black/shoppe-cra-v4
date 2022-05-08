@@ -5,6 +5,7 @@ import Grid from "../../components/grid/grid.component";
 import CardList from "../../components/card-list/card-list.component";
 
 import { about, servicesData, galleryData } from "../../data";
+import Form from "../../components/form/form.component";
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
         <Grid>
           <CardList data={galleryData} />
         </Grid>
+      </SectionBlock>
+      <SectionBlock title="Reach Out and Say Hi" tagId="contact">
+        <Form />
       </SectionBlock>
     </div>
   );

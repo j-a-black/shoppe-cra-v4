@@ -24,6 +24,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   font-size: 1.6rem;
+  overflow-x: hidden;
 
   h2 {
     font-family: $kaushan-script;
@@ -31,6 +32,7 @@ section {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     color: $color-secondary-style;
+    text-align: center;
   }
 
   p {

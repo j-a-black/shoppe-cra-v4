@@ -10,6 +10,8 @@ import CinnRoll from "./assets/images/cinn-roll.png";
 import Torta from "./assets/images/torta.png";
 import Brownie from "./assets/images/brownie.png";
 import Donut from "./assets/images/donut.png";
+import Pudding from "./assets/images/rice-pudding.png";
+import Mango from "./assets/images/mango.png";
 
 export const about = {
   subHeader: "Confections You Grew Up With",
@@ -82,6 +84,18 @@ export const galleryData = [
     id: 10,
     classNames: "card-img img-lg",
     imgSrc: Donut,
-    subHeader: "Cider Doughnut",
+    subHeader: "Ciambella",
+  },
+  {
+    id: 11,
+    classNames: "card-img img-lg",
+    imgSrc: Pudding,
+    subHeader: "Rice Pudding",
+  },
+  {
+    id: 12,
+    classNames: "card-img img-lg",
+    imgSrc: Mango,
+    subHeader: "Mango Cheesecake",
   },
 ];

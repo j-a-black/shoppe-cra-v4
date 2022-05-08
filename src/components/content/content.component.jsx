@@ -10,7 +10,7 @@ const Content = ({ data }) => {
       </div>
 
       <div className="content-text">
-        <h3>{data.subHeader}</h3>
+        <h2>{data.subHeader}</h2>
         <p>{data.para}</p>
       </div>
     </div>
