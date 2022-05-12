@@ -3,10 +3,12 @@ import "./page-banner.styles.scss";
 const PageBanner = ({ bkgImg }) => {
   return (
     <div
-      className="banner-container grid-center-title"
-      style={{ backgroundImage: { bkgImg } }}
+      className="banner-container "
+      style={{ backgroundImage: `url(${bkgImg})` }}
     >
-      <h1 className="header-primary">Order for Takeout</h1>
+      <div className="banner-overlay grid-center-title">
+        <h1 className="header-primary">Order for Takeout</h1>
+      </div>
     </div>
   );
 };
