@@ -1,3 +1,4 @@
+import Button from "../button/button.component";
 import "./product-item.styles.scss";
 
 const ProductItem = ({ product }) => {
@@ -7,7 +8,7 @@ const ProductItem = ({ product }) => {
         <img src={product.imgSrc} alt={product.subHeader} />
       </div>
       <h3>{product.subHeader}</h3>
-      hi
+      <Button>ADD</Button>
     </div>
   );
 };
