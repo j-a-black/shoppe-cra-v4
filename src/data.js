@@ -99,3 +99,18 @@ export const galleryData = [
     subHeader: "Mango Cheesecake",
   },
 ];
+
+export const products = [
+  {
+    id: 13,
+    classNames: "card-img img-lg",
+    imgSrc: "https://source.unsplash.com/s8HpMrQtl8E/280x560",
+    subHeader: "First",
+  },
+  {
+    id: 14,
+    classNames: "card-img img-lg",
+    imgSrc: "https://source.unsplash.com/s8HpMrQtl8E/280x560",
+    subHeader: "Second",
+  },
+];
