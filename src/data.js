@@ -166,4 +166,20 @@ export const products = [
     price: 11.99,
     qty: 1,
   },
+  {
+    id: 21,
+    imgSrc: "https://source.unsplash.com/jUTeHSwC01I/",
+    subHeader: "Danish Cinnamon Roll",
+    description: "Multilayered cake filled with whipped cream and mousse",
+    price: 11.99,
+    qty: 1,
+  },
+  {
+    id: 22,
+    imgSrc: "https://source.unsplash.com/W1TOhhlbQpw/",
+    subHeader: "Molten Chocolate Cake",
+    description: "Multilayered cake filled with whipped cream and mousse",
+    price: 11.99,
+    qty: 1,
+  },
 ];
