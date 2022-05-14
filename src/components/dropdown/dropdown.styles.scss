@@ -1,0 +1,27 @@
+@import "../../sassStyles/variables";
+
+.dropdown-container {
+  background-color: white;
+  width: 100%;
+  max-width: 42.5rem;
+  height: 100vh;
+  font-size: 1.6rem;
+
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 0.2px solid $color-main-style;
+    padding: 1rem 0;
+
+    h2 {
+      font-weight: 300;
+      font-size: inherit;
+    }
+
+    span {
+      margin: 0 2rem;
+      cursor: pointer;
+    }
+  }
+}

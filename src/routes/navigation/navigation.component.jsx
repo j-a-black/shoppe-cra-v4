@@ -1,5 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 
+import Dropdown from "../../components/dropdown/dropdown.component";
+import Overlay from "../../components/overlay/overlay.component";
+
 import { GiCupcake } from "react-icons/gi";
 import { FaOpencart } from "react-icons/fa";
 
@@ -22,8 +25,11 @@ const Navigation = () => {
         </nav>
         <div className="cart-icon-container">
           <span className="cart-icon-qty">999</span>
-          <FaOpencart />
+          <FaOpencart className="cart-icon-icon" />
         </div>
+        <Overlay>
+          <Dropdown />
+        </Overlay>
       </div>
       <div className="gutter" />
       <Outlet />
