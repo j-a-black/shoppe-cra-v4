@@ -3,11 +3,11 @@ import DropdownList from "../dropdown-list/dropdown-list.component";
 
 import "./dropdown.styles.scss";
 
-const Dropdown = () => {
+const Dropdown = ({ handleOnClick }) => {
   return (
     <div className="dropdown-container">
       <div className="dropdown-header">
-        <span>&#8592;</span>
+        <span onClick={handleOnClick}>&#8592;</span>
         <h2>Your Shopping Cart</h2>
         <span>(999)</span>
       </div>

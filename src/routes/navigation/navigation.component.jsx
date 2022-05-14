@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 import Dropdown from "../../components/dropdown/dropdown.component";
@@ -9,6 +10,11 @@ import { FaOpencart } from "react-icons/fa";
 import "./navigation.styles.scss";
 
 const Navigation = () => {
+  const [toggleDropdown, setToggleDropdown] = useState(false);
+
+  const handleOnClick = () => {
+    setToggleDropdown(!toggleDropdown);
+  };
   return (
     <>
       <div className="navigation-container">
@@ -25,11 +31,17 @@ const Navigation = () => {
         </nav>
         <div className="cart-icon-container">
           <span className="cart-icon-qty">999</span>
-          <FaOpencart className="cart-icon-icon" />
+          <FaOpencart className="cart-icon-icon" onClick={handleOnClick} />
         </div>
-        <Overlay>
-          <Dropdown />
-        </Overlay>
+        {toggleDropdown && (
+          <Overlay
+            toggleDropdown={toggleDropdown}
+            setToggleDropdown={setToggleDropdown}
+            handleOnClick={handleOnClick}
+          >
+            <Dropdown handleOnClick={handleOnClick} />
+          </Overlay>
+        )}
       </div>
       <div className="gutter" />
       <Outlet />

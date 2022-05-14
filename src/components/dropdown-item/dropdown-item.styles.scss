@@ -1,0 +1,40 @@
+@import "../../sassStyles/variables";
+
+.dropdown-item {
+  max-width: inherit;
+  height: 100px;
+  padding: 1rem 0.5rem;
+  border-bottom: 0.1px solid $grayscale-80;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 6rem;
+    height: 100%;
+    padding-right: 0.5rem;
+    object-fit: cover;
+  }
+
+  .dropdown-item-details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .dropdown-item-name {
+      padding-right: 0.5rem;
+      font-weight: 300;
+    }
+
+    .dropdown-item-price {
+      font-weight: 300;
+    }
+  }
+
+  .close-btn {
+    padding-left: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
