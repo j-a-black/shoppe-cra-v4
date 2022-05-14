@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 
 import { GiCupcake } from "react-icons/gi";
+import { FaOpencart } from "react-icons/fa";
 
 import "./navigation.styles.scss";
 
@@ -19,7 +20,12 @@ const Navigation = () => {
             SHOP
           </Link>
         </nav>
+        <div className="cart-icon-container">
+          <span className="cart-icon-qty">999</span>
+          <FaOpencart />
+        </div>
       </div>
+      <div className="gutter" />
       <Outlet />
     </>
   );
