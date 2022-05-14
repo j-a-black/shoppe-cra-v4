@@ -1,4 +1,5 @@
 import Button from "../button/button.component";
+import DropdownList from "../dropdown-list/dropdown-list.component";
 
 import "./dropdown.styles.scss";
 
@@ -10,7 +11,7 @@ const Dropdown = () => {
         <h2>Your Shopping Cart</h2>
         <span>(999)</span>
       </div>
-      <div className="dropdown-item-list"></div>
+      <DropdownList />
       <div className="dropdown-total">
         <span>Total</span>
         <span>999.99</span>

@@ -6,6 +6,9 @@
   max-width: 42.5rem;
   height: 100vh;
   font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
   .dropdown-header {
     display: flex;
@@ -22,6 +25,18 @@
     span {
       margin: 0 2rem;
       cursor: pointer;
+    }
+  }
+
+  .dropdown-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  .dropdown-btn-container {
+    Button:first-child {
+      margin-bottom: 1rem;
     }
   }
 }
