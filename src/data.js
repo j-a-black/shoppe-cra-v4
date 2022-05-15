@@ -163,7 +163,7 @@ export const products = [
     imgSrc: "https://source.unsplash.com/6iqpLKqeaE0/",
     subHeader: "Chocolate Torte",
     description: "Multilayered cake filled with whipped cream and mousse",
-    price: 11.99,
+    price: 32.99,
     qty: 1,
   },
   {
@@ -171,7 +171,7 @@ export const products = [
     imgSrc: "https://source.unsplash.com/jUTeHSwC01I/",
     subHeader: "Danish Cinnamon Roll",
     description: "Multilayered cake filled with whipped cream and mousse",
-    price: 11.99,
+    price: 18.99,
     qty: 1,
   },
   {
@@ -179,7 +179,7 @@ export const products = [
     imgSrc: "https://source.unsplash.com/W1TOhhlbQpw/",
     subHeader: "Molten Chocolate Cake",
     description: "Multilayered cake filled with whipped cream and mousse",
-    price: 11.99,
+    price: 14.99,
     qty: 1,
   },
 ];
