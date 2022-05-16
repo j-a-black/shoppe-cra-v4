@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
+import { CartProvider } from "./context/cart.context";
+
 import "./index.scss";
 
 const root = document.querySelector("#root");
@@ -11,7 +13,9 @@ const root = document.querySelector("#root");
 ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <CartProvider>
+        <App />
+      </CartProvider>
     </BrowserRouter>
   </StrictMode>,
   root
