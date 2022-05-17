@@ -9,8 +9,19 @@ export const CartContext = createContext({
   cartTotal: 0,
 });
 
-const addItemToCart = (prodcutToAdd) => {
-  console.log(prodcutToAdd);
+const addCartItem = (cartItems, prodcutToAdd) => {
+  const itemExistsInCart = cartItems.find(
+    (cartItem) => cartItem.id === prodcutToAdd.id
+  );
+
+  if (itemExistsInCart) {
+    return cartItems.map((cartItem) =>
+      cartItem.id === prodcutToAdd.id
+        ? { ...cartItem, qty: cartItem.qty + 1 }
+        : cartItem
+    );
+  }
+  return [...cartItems, { ...prodcutToAdd, qty: 1 }];
 };
 
 // const value = {
@@ -25,10 +36,14 @@ const addItemToCart = (prodcutToAdd) => {
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
+  const addItemToCart = (prodcutToAdd) => {
+    setCartItems(addCartItem(cartItems, prodcutToAdd));
+  };
+
   const value = {
     addItemToCart,
     cartItems: [],
   };
-
+  console.log(cartItems);
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
