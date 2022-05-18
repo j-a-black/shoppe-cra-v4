@@ -42,8 +42,8 @@ export const CartProvider = ({ children }) => {
 
   const value = {
     addItemToCart,
-    cartItems: [],
+    cartItems,
   };
-  console.log(cartItems);
+  // console.log(cartItems);
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };

@@ -19,6 +19,14 @@
     border: 1px solid black;
   }
 
+  &:active {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+  }
+
   &.inverted {
     background-color: white;
     color: black;
