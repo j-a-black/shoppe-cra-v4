@@ -1,9 +1,16 @@
+import { useContext } from "react";
+import { CartContext } from "../../context/cart.context";
+
 import Button from "../button/button.component";
 import DropdownList from "../dropdown-list/dropdown-list.component";
 
 import "./dropdown.styles.scss";
 
 const Dropdown = ({ handleOnClick }) => {
+  const { cartTotal, clearItemsFromCart } = useContext(CartContext);
+
+  const clearCart = () => clearItemsFromCart();
+
   return (
     <div className="dropdown-container">
       <div className="dropdown-header">
@@ -14,11 +21,11 @@ const Dropdown = ({ handleOnClick }) => {
       <DropdownList />
       <div className="dropdown-total">
         <span>Total</span>
-        <span>999.99</span>
+        <span>{cartTotal}</span>
       </div>
       <div className="dropdown-btn-container">
         <Button>Checkout</Button>
-        <Button>Clear Cart</Button>
+        <Button onClick={clearCart}>Clear Cart</Button>
       </div>
     </div>
   );
