@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const CartContext = createContext({
   addItemToCart: () => {},
-  removeFromCart: () => {},
+  removeItemFromCart: () => {},
   clearCart: () => {},
   cartItems: [],
   cartCount: 0,
@@ -24,6 +24,22 @@ const addCartItem = (cartItems, prodcutToAdd) => {
   return [...cartItems, { ...prodcutToAdd, qty: 1 }];
 };
 
+const removeCartItem = (cartItems, cartItemToRemove) => {
+  const itemExistsInCart = cartItems.find(
+    (cartItem) => cartItem.id === cartItemToRemove.id
+  );
+
+  if (itemExistsInCart.qty === 1) {
+    return cartItems.filter((cartItem) => cartItem.id !== cartItemToRemove.id);
+  }
+
+  return cartItems.map((cartItem) =>
+    cartItem.id === cartItemToRemove.id
+      ? { ...cartItem, qty: cartItem.qty - 1 }
+      : cartItem
+  );
+};
+
 // const value = {
 //   addToCart,
 //   removeFromCart,
@@ -40,8 +56,13 @@ export const CartProvider = ({ children }) => {
     setCartItems(addCartItem(cartItems, prodcutToAdd));
   };
 
+  const removeItemFromCart = (cartItemToRemove) => {
+    setCartItems(removeCartItem(cartItems, cartItemToRemove));
+  };
+
   const value = {
     addItemToCart,
+    removeItemFromCart,
     cartItems,
   };
   // console.log(cartItems);
