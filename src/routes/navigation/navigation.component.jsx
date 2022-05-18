@@ -24,15 +24,16 @@ const Navigation = () => {
         <Link to="/" className="logo-container">
           <GiCupcake />
         </Link>
-        <nav className="nav-links">
-          <Link className="nav-link" to="/">
-            HOME
-          </Link>
-          <Link className="nav-link" to="shop">
-            SHOP
-          </Link>
-        </nav>
+
         <div className="cart-icon-container">
+          <nav className="nav-links">
+            <Link className="nav-link" to="/">
+              HOME
+            </Link>
+            <Link className="nav-link" to="shop">
+              SHOP
+            </Link>
+          </nav>
           <span className="cart-icon-qty">{cartCount}</span>
           <FaOpencart className="cart-icon-icon" onClick={handleOnClick} />
         </div>

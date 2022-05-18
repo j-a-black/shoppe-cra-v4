@@ -7,9 +7,10 @@ import DropdownList from "../dropdown-list/dropdown-list.component";
 import "./dropdown.styles.scss";
 
 const Dropdown = ({ handleOnClick }) => {
-  const { cartTotal, clearItemsFromCart } = useContext(CartContext);
+  const { cartTotal, clearItemsFromCart, checkout } = useContext(CartContext);
 
   const clearCart = () => clearItemsFromCart();
+  const checkoutCustomer = () => checkout();
 
   return (
     <div className="dropdown-container">
@@ -24,7 +25,7 @@ const Dropdown = ({ handleOnClick }) => {
         <span>{cartTotal}</span>
       </div>
       <div className="dropdown-btn-container">
-        <Button>Checkout</Button>
+        <Button onClick={checkoutCustomer}>Checkout</Button>
         <Button onClick={clearCart}>Clear Cart</Button>
       </div>
     </div>
