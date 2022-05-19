@@ -41,8 +41,10 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
   );
 };
 
+const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]");
+
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(cartFromLocalStorage);
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
 
@@ -60,6 +62,10 @@ export const CartProvider = ({ children }) => {
       0
     );
     setCartTotal(newCartTotal.toFixed(2));
+  }, [cartItems]);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addItemToCart = (prodcutToAdd) => {
