@@ -41,9 +41,6 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
   );
 };
 
-// const clearCartItem = (cartItems, cartItemToClear) =>
-//   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
-
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
@@ -62,7 +59,7 @@ export const CartProvider = ({ children }) => {
       (total, cartItem) => total + cartItem.qty * cartItem.price,
       0
     );
-    setCartTotal(newCartTotal);
+    setCartTotal(newCartTotal.toFixed(2));
   }, [cartItems]);
 
   const addItemToCart = (prodcutToAdd) => {

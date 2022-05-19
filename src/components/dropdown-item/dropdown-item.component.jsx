@@ -10,16 +10,20 @@ const DropdownItem = ({ cartItem }) => {
 
   return (
     <div className="dropdown-item">
-      <img src={cartItem.imgSrc} alt={`${cartItem.subHeader}`} />
-      <div className="dropdown-cartItem-details">
-        <span className="dropdown-cartItem-name">{cartItem.subHeader}</span>
-        <span className="dropdown-cartItem-price">
-          {cartItem.qty} x ${cartItem.price}
+      <span className="dropdown-img-and-details-box">
+        <img src={cartItem.imgSrc} alt={`${cartItem.subHeader}`} />
+
+        <span className="dropdown-cartItem-details">
+          <div className="dropdown-cartItem-name">{cartItem.subHeader}</div>
+          <div className="dropdown-cartItem-price">
+            {cartItem.qty} x ${cartItem.price}
+          </div>
         </span>
-      </div>
-      <span className="close-btn" onClick={removeFromCart}>
-        &#10006;
       </span>
+
+      <div className="close-btn" onClick={removeFromCart}>
+        &#10006;
+      </div>
     </div>
   );
 };
