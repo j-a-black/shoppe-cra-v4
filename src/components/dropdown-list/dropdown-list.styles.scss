@@ -1,5 +1,7 @@
+@import "../../sassStyles/variables";
+
 .dropdown-item-list {
-  border: 1px solid green;
+  border: 1px solid $grayscale-80;
   height: auto;
   overflow-y: scroll;
   flex: 1 1 30rem;

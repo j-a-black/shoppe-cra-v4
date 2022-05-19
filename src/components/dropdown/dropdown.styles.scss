@@ -14,18 +14,26 @@
   .dropdown-header {
     display: flex;
     align-items: center;
-
-    border-bottom: 0.2px solid $color-main-style;
+    height: 4rem;
     padding: 1rem 0;
+
+    .left-arrow {
+      // border: 0.1px solid black;
+      width: 5rem;
+      margin-right: 1rem;
+      height: 100%;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
 
     h2 {
       font-weight: 300;
       font-size: inherit;
     }
 
-    span {
-      margin: 0 2rem;
-      cursor: pointer;
+    .dropdown-counter {
+      margin-left: 2rem;
     }
   }
 

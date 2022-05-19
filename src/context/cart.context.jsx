@@ -7,7 +7,7 @@ export const CartContext = createContext({
   cartItems: [],
   cartCount: 0,
   cartTotal: 0,
-  checkout: () => {},
+  cartCheckout: () => {},
 });
 
 const addCartItem = (cartItems, prodcutToAdd) => {
@@ -77,7 +77,7 @@ export const CartProvider = ({ children }) => {
     setCartItems([]);
   };
 
-  const checkout = () => {
+  const cartCheckout = () => {
     alert("Thank you for your purchase!");
     setCartItems([]);
   };
@@ -89,7 +89,7 @@ export const CartProvider = ({ children }) => {
     cartItems,
     cartCount,
     cartTotal,
-    checkout,
+    cartCheckout,
   };
   // console.log(cartItems);
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
