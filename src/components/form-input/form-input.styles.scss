@@ -2,12 +2,13 @@
 
 .form-group {
   position: relative;
-  max-width: 30rem;
+  width: inherit;
+  max-width: inherit;
   height: 2rem;
   margin: 0 auto 5rem auto;
 
   .form-input {
-    width: 100%;
+    width: inherit;
     height: 100%;
     border: 1px solid $color-main-style;
     font-family: inherit;
@@ -18,7 +19,7 @@
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
     outline: none;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 
     &:hover,
     &:focus {
@@ -28,7 +29,7 @@
 
   .form-label {
     position: absolute;
-    left: 1rem;
+    left: 0.8rem;
     top: 0.5rem;
     padding: 0 0.5rem;
     background-color: white;

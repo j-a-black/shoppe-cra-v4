@@ -45,3 +45,17 @@
   display: grid;
   place-items: center;
 }
+
+@media screen and (min-width: 700px) {
+  .hero-container {
+    .hero-text-box {
+      .header-primary {
+        font-size: 8rem;
+      }
+
+      .header-sub {
+        font-size: 2rem;
+      }
+    }
+  }
+}

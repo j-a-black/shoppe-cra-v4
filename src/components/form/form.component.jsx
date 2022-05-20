@@ -1,3 +1,4 @@
+import Button from "../button/button.component";
 import FormInput from "../form-input/form-input.component";
 import "./form.styles.scss";
 
@@ -22,8 +23,10 @@ const Form = () => {
           type="email"
           required
           name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder=" "
         />
+        <Button>Submit</Button>
       </div>
     </form>
   );
